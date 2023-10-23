@@ -1,9 +1,14 @@
+main{
+    display: flex;
+}
+
 body {
 background-color: #f5f5f5;
 margin: 50px;
 padding: 0;
 display: flex;
 flex-direction: column;
+flex-wrap: wrap;
 font-family: 'DM Sans', sans-serif, Arial, Helvetica, sans-serif
 }
 
@@ -28,19 +33,6 @@ h3 {
 
 p {
     font-family: 'DM Sans', sans-serif, Arial, Arial, Helvetica, sans-serif;
-}
-
-@media screen and (max-width: 768px) {
-    /* Define styles for mobile viewports with a maximum width of 768px */
-    .hamburger-menu {
-        position: fixed;
-        top: 20px; /* Adjust the top position for mobile */
-        right: 20px; /* Adjust the right position for mobile */
-    }
-    body {
-        margin: 0;
-        padding: 0;
-    }
 }
 
 .hamburger-menu {
@@ -227,3 +219,38 @@ input:checked ~ span:nth-last-child(2) {
   .resume-date {
     font-style: italic;
   }
+
+  .portfolio{
+    display: flex;
+    
+  }
+
+  .byline {
+
+  }
+
+  @media screen and (max-width: 600px) {
+    body {
+        display: flex;
+        margin: 50px;
+        padding: 0;
+    }
+
+    h1{
+        size: 3em;
+    }
+    
+    .resume{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: auto;
+        margin-bottom: 0px;
+    }
+
+    .hamburger-menu {
+        position: fixed;
+        top: 20px; /* Adjust the top position for mobile */
+        right: 20px; /* Adjust the right position for mobile */
+    }
+}
