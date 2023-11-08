@@ -1,3 +1,17 @@
+//menu
+const checkbox = document.getElementById('op');
+        const mainContent = document.getElementById('content');
+
+        checkbox.addEventListener('change', function () {
+            if (checkbox.checked) {
+                // Checkbox is checked, apply z-index: -1000
+                mainContent.style.zIndex = '-1000';
+            } else {
+                // Checkbox is unchecked, remove the z-index property
+                mainContent.style.removeProperty('z-index');
+            }
+        });
+
 //gif
 const gif = document.getElementById('autoplayGif');
 
@@ -20,3 +34,4 @@ const handleIntersection = (entries, observer) => {
 const observer = new IntersectionObserver(handleIntersection, options);
 
 observer.observe(gif);
+
