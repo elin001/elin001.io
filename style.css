@@ -1,6 +1,7 @@
 main {
     display: flex;
     flex-flow: column wrap;
+    z-index: -1000;
 }
 
 body {
@@ -112,6 +113,7 @@ input:checked ~ span:nth-last-child(2) {
       top: 0;
       left: 0;
       background: rgba(0,0,0,0.9);
+      z-index: 10000;
   }
   
   .overlay label{
@@ -121,8 +123,8 @@ input:checked ~ span:nth-last-child(2) {
       right: 20px;
       top: 20px;
       background: url('https://tympanus.net/Development/FullscreenOverlayStyles/img/cross.png');
-      z-index: 100;
-      cursor:pointer;
+      z-index: 1000;
+      cursor: pointer;
   }
   
   .overlay nav {
@@ -142,6 +144,7 @@ input:checked ~ span:nth-last-child(2) {
       display: inline-block;
       height: 100%;
       position: relative;
+      z-index: 1000;
   }
   
   .overlay ul li {
@@ -180,6 +183,7 @@ input:checked ~ span:nth-last-child(2) {
       visibility: visible;
       -webkit-transition: opacity 0.5s;
       transition: opacity 0.5s;
+      z-index: 10000;
   }
   
   .overlay-hugeinc nav {
@@ -208,7 +212,7 @@ input:checked ~ span:nth-last-child(2) {
   .about {
     font-size: 2.5em; 
     margin-right: 600px; 
-    margin-bottom: 0px"
+    margin-bottom: 0px;
   }
 
   .resume {
@@ -221,6 +225,10 @@ input:checked ~ span:nth-last-child(2) {
 
   .resume-date {
     font-style: italic;
+  }
+
+  .portfolio {
+    margin-right: 33px;
   }
 
   .byline {
@@ -243,7 +251,7 @@ input:checked ~ span:nth-last-child(2) {
   .hedlink::before {
     content: '';
     position: absolute;
-    display: block;
+    display: flex;
     width: 0; /* Start with a width of 0 */
     height: 2px;
     background-color: black; /* Color of the underline */
@@ -285,7 +293,7 @@ input:checked ~ span:nth-last-child(2) {
     cursor: pointer;
   }
 
-  a:visited:{
+  a:visited{
     font-style: none;
   }
 
