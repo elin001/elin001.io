@@ -1,5 +1,6 @@
-main{
+main {
     display: flex;
+    flex-flow: column wrap;
 }
 
 body {
@@ -204,6 +205,12 @@ input:checked ~ span:nth-last-child(2) {
       transform: translateY(25%) rotateX(-35deg);
   }
 
+  .about {
+    font-size: 2.5em; 
+    margin-right: 600px; 
+    margin-bottom: 0px"
+  }
+
   .resume {
     display: flex;
     flex-direction: column;
@@ -212,21 +219,74 @@ input:checked ~ span:nth-last-child(2) {
     margin-bottom: 0px;
   }
 
-  .resume-newsroom {
-    
-  }
-
   .resume-date {
     font-style: italic;
   }
 
-  .portfolio{
+  .byline {
     display: flex;
-    
   }
 
-  .byline {
+  .hedder {
+    flex: 1;
+    align-self: center;
+  }
 
+  .hedlink {
+    color: black;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease; /* Add color transition for smooth color change */
+  }
+  
+  .hedlink::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0; /* Start with a width of 0 */
+    height: 2px;
+    background-color: black; /* Color of the underline */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Add width transition for animation */
+  }
+  
+  .hedlink:hover {
+    color: black;
+  }
+  
+  .hedlink:hover::before {
+    width: 100%; /* Expand the underline from left to right on hover */
+  }
+
+  .hed {
+    font-size: 3em;
+    margin-top: 5px;
+    margin-left: 0px; 
+    margin-bottom: 10px;
+  }
+
+  .outlet {
+    font-size: 1.5em;
+  }
+
+  .tools {
+    font-style: italic;
+  }
+
+  img {
+    height: 300px;
+    width: auto;
+    margin: 15px;
+  }
+
+  img:hover {
+    cursor: pointer;
+  }
+
+  a:visited:{
+    font-style: none;
   }
 
   @media screen and (max-width: 600px) {
@@ -238,6 +298,11 @@ input:checked ~ span:nth-last-child(2) {
 
     h1{
         size: 3em;
+    }
+
+    .about {
+      margin-right: 0px;
+      font-size: 1.5em;
     }
     
     .resume{
@@ -253,4 +318,9 @@ input:checked ~ span:nth-last-child(2) {
         top: 20px; /* Adjust the top position for mobile */
         right: 20px; /* Adjust the right position for mobile */
     }
+    .byline {
+      display: flex;
+      flex-flow: column wrap;
+    }
+
 }

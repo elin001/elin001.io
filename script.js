@@ -1,11 +1,22 @@
-$(document).ready(function () {
+//gif
+const gif = document.getElementById('autoplayGif');
 
-    $('.menu').click(function() {
-        $('.overlay').toggleClass('anim');
-        $(this).addClass('open')
+const options = {
+    root: null, 
+    rootMargin: '0px',
+    threshold: 0.5, 
+};
+
+const handleIntersection = (entries, observer) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            gif.src = gif.src;
+        } else {
+            gif.src = gif.src;
+        }
     });
+};
 
-    $('.open').click(function(){
-        $('.overlay').toggleClass('reverse-animation');
-    })
-});
+const observer = new IntersectionObserver(handleIntersection, options);
+
+observer.observe(gif);
