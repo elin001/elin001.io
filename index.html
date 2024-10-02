@@ -11,38 +11,73 @@
 </head>
 <body>
     <h1>Ellie Lin</h1>
-    <h3 style="font-style: italic;">Student, journalist</h3>
-<div class="hamburger-menu">
-    <input type="checkbox" id="op" />
-    <div class="lower">
-        <label for="op">
-            <span></span>
-            <span></span>
-            <span></span>
-        </label>
-      </div>
-    <div class="overlay overlay-hugeinc">
-                <label for="op"></label>
-                <nav>
-                    <ul>
-                        <li><a href="https://ellie-lin.com/index.html">Home</a></li>
-                        <li><a href="https://ellie-lin.com/resume.html">Resume</a></li>
-                        <li><a href="https://ellie-lin.com/portfolio.html">Portfolio</a></li>
-                        <li><a href="https://ellie-lin.com/about.html">About</a></li>
-                    </ul>
-                </nav>
-    </div>
-</div>
+    <h3 style="font-style: italic">Visual journalist</h3>
 
     <main id="content">
-    <p class="about">
-        I'm a senior Journalism major at the University of Missouri. I like breaking down complex concepts into impactful, visual stories for every audience member.
-    </p>
+        <div class="about">
+            <p>
+                I'm a hybrid designer at The Minnesota Star Tribune. I design stories for web, print and social. I like breaking down complex concepts into impactful, visual stories for every audience member.
+            </p>
 
-    <p>
-        You can check out what I'm up to on <a href="https://www.linkedin.com/in/ellie-d-lin/">Linkedin</a> or <a href="https://twitter.com/ellielin_">Tw*tter</a>. 
-    </p>
+            <p>
+                Off this site, you can check out what I'm up to on <a href="https://www.linkedin.com/in/ellie-d-lin/">Linkedin</a> or <a href="https://twitter.com/ellielin_">Tw*tter</a>. My full resume is <a href="https://ellie-lin.com/resume.html" >here!</a>
+            </p>
+        </div>
 
+        <div class="portfolio">
+        <h2>Portfolio</h2>
+            <div class="byline">
+                <div class="img-wrapper">
+                    <img id="autoplayGif" src="media/migrants-journey-scroller.gif" alt="An animated look at the 3D terrain of Caparguná, Colombia. Caparguná is a port city near an entrance to the Darién Gap.">
+                </div>
+                <div class="hedder">
+                    <h2 class="hed"><a class="hedlink" href="https://www.sacbee.com/news/equity-lab/article276713191.ece">How this migrant traveled thousands of miles to Sacramento</a></h2>
+                    <h3 class="outlet">Sacramento Bee</h3>
+                    <p class="tools">🔧: Google Earth Studio, After Effects, Scrollytelling</p>
+                </div>
+            </div>
+            <br>
+            <div class="byline">
+                <div class="img-wrapper">
+                    <img id="autoplayGif" src="media/induction2.gif" alt="An animation of a wok on an induction burner. There is a cross section of how an induction cooker works.">
+                </div>
+                <div class="hedder">
+                    <h2 class="hed"><a class="hedlink" href="https://www.sacbee.com/news/politics-government/capitol-alert/article277266813.ece">SoCalGas spends millions to fight bans on restaurant gas use</a></h2>
+                    <h3 class="outlet">Sacramento Bee</h3>
+                    <p class="tools">🔧: After Effects</p>
+                    <p>Read about my process for designing and drafting this story <a href="https://rjionline.org/news/wok-and-scroll-the-process-of-designing-an-animated-information-graphic/">here</a>.</p>
+                </div>
+            </div>
+            <br>
+            <div class="byline">
+                <div class="img-wrapper">
+                    <img src="media/census.png" alt="An illustration that includes a chloropleth map of California counties and text that reads 'See how Sacramento has changed since the pandemic in 9 charts'">
+                </div> 
+                <div class="hedder">
+                    <h2 class="hed"><a class="hedlink" href="https://www.sacbee.com/news/california/article276501901.ece">See how Sacramento area has changed since pandemic in 9 charts based on new Census data</a></h2>
+                    <h3 class="outlet">Sacramento Bee</h3>
+                    <p class="tools">🔧: RStudio/tidycensus, Census Bureau API, Datawrapper, Illustrator</p>
+                    <p>Read about how we worked on this story and a code quickstart for people looking to get into RStudio and the Census Bureau's API <a href="https://rjionline.org/news/making-census-data-accessible-for-reporters-with-varying-data-literacy/">here</a>.</p>
+                </div>
+            </div>
+            <br>
+            <div class="byline">
+                <div class="img-wrapper">
+                    <img src="media/hate-crime-chart.png">
+                    <!-- <iframe title="Increase in statewide reported hate crimes after 2020" aria-label="Interactive line chart" id="datawrapper-chart-lZ3oI" src="https://datawrapper.dwcdn.net/lZ3oI/6/" width="150px" height="350px" scrolling="no" frameborder="0" style="border: none;"  data-external="1"></iframe> -->
+                </div>
+                <div class="hedder">
+                    <h2 class="hed"><a class="hedlink" href="https://www.sacbee.com/news/local/article276809221.ece">Anti-LGBTQ crimes nearly doubled in Sacramento area in 2022, state hate crime report says</a></h2>
+                    <h3 class="outlet">Sacramento Bee</h3>
+                    <p class="tools">🔧: RStudio, Datawrapper</p>
+                </div>
+            </div>
+            <br>
+        </div>
+    
     </main>
+    <script src="script.js"></script>
+    </body>
+
 </body>
 </html>
